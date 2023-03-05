@@ -1,0 +1,433 @@
+/* estilos globales */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Titillium+Web:wght@200&display=swap');
+body{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(39, 39, 39);;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    color: rgb(214, 214, 214);
+    overflow-x: hidden;
+}
+#first-strike{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* encabezado */
+.header{
+    width: 100%;
+    height: 3.7rem;
+    background-color: rgb(0, 0, 0);
+    border-bottom: .1rem solid rgb(74, 252, 74);
+}
+.header__nav{
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 3rem;
+}
+.header__li{
+    list-style: none;
+}
+.header__li a{
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    top: -.5rem;
+    color: rgb(214, 214, 214);
+}
+.header__li img{
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: .5rem;
+}
+.header__li__img__logo{
+    transform: scale(1.7);
+}
+/* estilizacion titulo y texto */
+.laptops{
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+    height: 12rem;
+    padding: .5rem;
+}
+.laptops h3{
+    font-size: 2.3rem;
+    color: rgb(74, 252, 74);
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+.laptops p{
+    text-align: center;
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+/* section mandos */
+#mando{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/* positon absolute para colocar elementos arriba */
+.mando__back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: .1rem solid rgb(74, 252, 74);
+}
+/* alto y ancho al 100% para el total de la imagen */
+.mando__back img{
+   width: 100%;
+   height: 100%;
+}
+/* estilizacion del texto y titulo */
+.contentMandos{
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+}
+.contentMandos h3{
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#auri{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+/* ancho del 100% y alto de 100 vista de alto flex-content center para centrar los 2 contenedores */
+.content__auri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+}
+/* estilos del  */
+.auri__caja{
+    width: 34rem;
+    height: 38rem;
+    background-image: url("../imagenesConsole/razer-hammerhead-hyperspeed-hero.jpg");
+    background-position: center;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.contentMandos h3{
+    color: rgb(74, 252, 74);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.contentMandos p{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.contentCajadDos{
+    background-image: url("../imagenesConsole/razer-hammerhead-hyperspeed-xbox_desktop-1920x700.jpg");
+}
+/* mandos2 */
+#mando2{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: .1rem solid rgb(74, 252, 74);
+}
+.mando__back2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: .1rem solid rgb(74, 252, 74);
+}
+.mando__back2 img{
+   width: 100%;
+   height: 100%;
+}
+.contentVerde{
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    text-align: center;
+}
+.contentVerde h3{
+    font-weight: 700;
+    color: rgb(74, 252, 74);
+    font-size: 1.5rem;
+}
+.contentAmarillo{
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    text-align: center;
+}
+.contentAmarillo h3{
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+/* cajas */
+#pcs{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentPcs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 80%;
+}
+.contenedorCaja{
+    width: 25rem;
+    height: 33rem;
+    background-color: rgb(14, 14, 14);
+    border-bottom: .1rem solid rgb(74, 252, 74);
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+.contenedorCaja img{
+    width: 100%;
+    height: 65%;
+}
+.contenedorCaja h4{
+    margin-left: 1.5rem;
+    color: rgb(74, 252, 74);
+}
+.contenedorCaja p{
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    margin-bottom: .5rem;
+}
+/* cajas pequeñas */
+#pcst{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentPcst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    height: 100%;
+}
+.contenedorCajat{
+    width: 16rem;
+    height: 27rem;
+    background-color: rgb(0, 0, 0);
+    border-bottom: .1rem solid rgb(74, 252, 74);
+    margin: .8rem .4rem;
+}
+.contenedorCajat img{
+    width: 100%;
+    height: 65%;
+}
+.contenedorCajat h4{
+    margin-left: 1.5rem;
+    color: rgb(74, 252, 74);
+}
+.contenedorCajat p{
+    font-size: .9rem;
+    margin-left: 1.5rem;
+    margin-bottom: .5rem;
+}
+footer{
+    width: 100% ;
+    height: 23rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    background-color: rgb(17, 17, 17);
+    border-top: .1rem solid rgb(74, 252, 74);
+    padding: .5rem  ;
+}
+.footer__content{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    color: rgb(190, 190, 190);
+}
+.footer__content div{
+    color: white;
+    font-weight: bold;
+}
+.footer__content a{
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+    text-decoration: none;
+    color: rgb(190, 190, 190);
+}
+.footer__content h3{
+    font-size: 1.9rem;
+    color: rgb(74, 252, 74);
+}
+.contentImgRedes img{
+    height: 3rem;
+    width: 3rem;
+    margin: 0 .6rem ;
+}
+
+
+/* fin footer */
+
+.openResponsive img{
+    display: none;
+}
+
+@media (max-width: 600px){
+    
+    #first-strike{
+        height: max-content;
+    }
+    .header{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(13, 13, 13);
+        position: relative;
+        left: -100%;
+        display: none;
+    }
+    .response{
+        position: relative;
+        left: 0;
+        display: block;
+    }
+    .header__ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 3rem;
+    }
+    .header__li{
+        list-style: none;
+    }
+
+
+    .laptops{
+        height: max-content;
+    }
+    #mando{
+        height: 18rem;
+    }
+    #mando2{
+        height: 18rem;
+    }
+    .contentVerde{
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        text-align: center;
+    }
+    .contentVerde h3{
+        font-size: 1rem;
+    }
+    #auri{
+        height: 200vh;
+    }
+    #pcs{
+        height: max-content;
+    }
+    #pcst{
+        height: max-content;
+    }
+
+    footer{
+        width: 100% ;
+        height: 250vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;   
+        background-color: rgb(17, 17, 17);
+        border-top: .1rem solid rgb(74, 252, 74);
+        padding: .5rem  ;
+    }
+    .footer__content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 1.8rem;
+        color: rgb(190, 190, 190);
+    }
+    .openResponsive{
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(14, 14, 14);
+    }
+    .contentMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .linea1{
+        width: 2rem;
+        height: .1rem;
+        background-color: white;
+        margin-bottom: .6rem;
+    }
+    .linea2{
+        width: 2rem;
+        height: .1rem;
+        background-color: white;
+        margin-bottom: .3rem;
+    }
+    .linea3{
+        width: 2rem;
+        height: .1rem;
+        background-color: white;
+        margin-top: .3rem;
+    }
+    }
